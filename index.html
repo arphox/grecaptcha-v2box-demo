@@ -15,6 +15,9 @@
 	<button onclick = "onGetResponse()">GetResponse</button>
 	
 	<div id="html_element"></div>
+	<br/>
+	
+	<div id="recaptcha_response"/>
 
 <script>
 function onClick() {
@@ -27,7 +30,7 @@ function onClick() {
 
 function onGetResponse() {
 	var x = grecaptcha.getResponse();
-	console.log(x);
+	document.getElementById("recaptcha_response").innerText = x;
 }
 
 </script>
