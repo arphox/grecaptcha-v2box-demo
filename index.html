@@ -5,19 +5,12 @@
  async defer></script>
   </head>
   <body>
-	  <p><a href="https://github.com/arphox/grecaptcha-v2box-demo/">Repository link</a></p><br/>
-    <label>Site key: </label>
-	<input
-	  size = "60"
-	  type = "text"
-	  id = "data-sitekey"
-	  value = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"/>
-	<button onclick = "onGetResponse()">GetResponse</button>
-	
-	<div id="html_element"></div>
-	<br/>
-	
-	<div id="recaptcha_response"/>
+<p><a href="https://github.com/arphox/grecaptcha-v2box-demo/">Repository link</a></p><br/>
+<div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+<br/>
+<button onclick = "onGetResponse()">GetResponse</button>
+<br/>
+<div id="recaptcha_response"/>
 
 <script>
 function onGetResponse() {
