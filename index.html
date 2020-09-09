@@ -9,7 +9,7 @@
 <label>Site key: </label>
 <input size = "60" type = "text" id = "sitekey" value = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"/>  
 <br/>
-<button onclick = "onReset()">Reset</button>
+<button onclick = "onReset()">Render</button>
 <button onclick = "onGetResponse()">GetResponse</button>
 
 <div id="html_element"></div>
@@ -20,7 +20,6 @@
 
 function onReset() {
   var key = document.getElementById("sitekey").getAttribute("value");
-  grecaptcha.reset();
   grecaptcha.render('html_element', { 'sitekey' : key });
 }
 
